@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("MainActivity", "método onCreate()");
+        Log.d(MainActivity.class.getName(), "método onCreate()");
     }
     @Override
     /*
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void onStart(){
         super.onStart();
-        Log.d("MainActivity", "método onStart()");
+        Log.d(MainActivity.class.getName(), "método onStart()");
     }
     @Override
     /*
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     */
     protected void onRestart(){
         super.onRestart();
-        Log.d("MainActivity", "método onRestart()");
+        Log.d(MainActivity.class.getName(), "método onRestart()");
     }
     @Override
     /*
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void onResume(){
         super.onResume();
-        Log.d("MainActivity", "método onResume()");
+        Log.d(MainActivity.class.getName(), "método onResume()");
     }
     @Override
     /*
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void onPause(){
         super.onPause();
-        Log.d("MainActivity", "método onPause()");
+        Log.d(MainActivity.class.getName(), "método onPause()");
     }
     @Override
     /*
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void onStop(){
         super.onStop();
-        Log.d("MainActivity", "método onStop()");
+        Log.d(MainActivity.class.getName(), "método onStop()");
     }
     @Override
     /*Método chamado quando a atividade vai ser destruída ou está finalizada.*/
     protected void onDestroy(){
         super.onDestroy();
-        Log.d("MainActivity", "método onDestroy()");
+        Log.d(MainActivity.class.getName(), "método onDestroy()");
     }
 }
